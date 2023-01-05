@@ -1,8 +1,15 @@
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
 </script>
-<script type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 
 # Resolvendo analiticamente os gramianos
@@ -37,28 +44,39 @@ Denote por $I_{(m)}$ a matriz identidade de ordem $m$, $\otimes$ o produto de Kr
 Resolva o seguinte sistema linear, nas variáveis $\text{vec}(S_i)$.
 
 $$
+{\color{magenta}
 \begin{bmatrix}
 I_{(Nn^2)} - \left(
-\begin{bmatrix}
-\hat{A}_1'\otimes \hat{A}_1'&&&\\
-&\hat{A}_2'\otimes \hat{A}_2'&&\\
-&&\ddots&\\
-&&&\hat{A}_N'\otimes \hat{A}_N'
-\end{bmatrix}\cdot \Bigg(P\otimes I_{(n^2)}\Bigg)\right)
+{\color{red}
+  \begin{bmatrix}
+  \hat{A}_1'\otimes \hat{A}_1'&&&\\
+  &\hat{A}_2'\otimes \hat{A}_2'&&\\
+  &&\ddots&\\
+  &&&\hat{A}_N'\otimes \hat{A}_N'
+  \end{bmatrix}
+}\cdot {\color{blue}
+  \Bigg(P\otimes I_{(n^2)}\Bigg)
+}
+\right)
 \end{bmatrix}
+}
+{\color{blue}
 \begin{bmatrix}
 \text{vec}(S_1)\\
 \text{vec}(S_2)\\
 \vdots\\
 \text{vec}(S_N)
 \end{bmatrix}
+}
 =
+{\color{cyan}
 \begin{bmatrix}
 \text{vec}(\mathcal{O}_1)\\
 \text{vec}(\mathcal{O}_2)\\
 \vdots\\
 \text{vec}(\mathcal{O}_N)
 \end{bmatrix}
+}
 $$
 
 $S_i=\text{vec}^{-1}(S_i)$ é o $i$-ésimo gramiano de observabilidade, para cada $i\in\mathbf{S}$.
@@ -68,34 +86,50 @@ $S_i=\text{vec}^{-1}(S_i)$ é o $i$-ésimo gramiano de observabilidade, para cad
 Resolva o seguinte sistema linear, nas variáveis $\text{vec}(V_i)$.
 
 $$
+{\color{magenta}
 \begin{bmatrix}
 I_{(Nn^2)} -
 \left(
-\begin{bmatrix}
-\hat{A}_1\otimes \hat{A}_1&&&\\
-&\hat{A}_2\otimes \hat{A}_2&&\\
-&&\ddots&\\
-&&&\hat{A}_N\otimes \hat{A}_N
-\end{bmatrix}
-\cdot \Bigg(P'\otimes I_{(n^2)}\Bigg)
+{\color{red}
+  \begin{bmatrix}
+  \hat{A}_1\otimes \hat{A}_1&&&\\
+  &\hat{A}_2\otimes \hat{A}_2&&\\
+  &&\ddots&\\
+  &&&\hat{A}_N\otimes \hat{A}_N
+  \end{bmatrix}
+}
+\cdot {\color{blue}
+  \Bigg(P'\otimes I_{(n^2)}\Bigg)
+}
 \right)
 \end{bmatrix}
-\begin{bmatrix}
-\text{vec}(V_1)\\
-\text{vec}(V_2)\\
-\vdots\\
-\text{vec}(V_N)
-\end{bmatrix}
+}
+{\color{cyan}
+  \begin{bmatrix}
+  \text{vec}(V_1)\\
+  \text{vec}(V_2)\\
+  \vdots\\
+  \text{vec}(V_N)
+  \end{bmatrix}
+}
 $$
 
-$$ =
-\Big(P'\otimes I_{(n^2)} \Big)\cdot\Big(\text{diag}(\pi)\otimes I_{(n^2)}\Big)
-\begin{bmatrix}
-\text{vec}(E_1E_1')\\
-\text{vec}(E_2E_2')\\
-\vdots\\
-\text{vec}(E_NE_N')
-\end{bmatrix}
+$$
+=
+{\color{red}
+  \Big(P'\otimes I_{(n^2)} \Big)
+}
+\cdot{\color{blue}
+  \Big(\text{diag}(\pi)\otimes I_{(n^2)}\Big)
+}
+{\color{cyan}
+  \begin{bmatrix}
+  \text{vec}(E_1E_1')\\
+  \text{vec}(E_2E_2')\\
+  \vdots\\
+  \text{vec}(E_NE_N')
+  \end{bmatrix}
+}
 $$
 
 $V_i=\text{vec}^{-1}(V_i)$ é o $i$-ésimo gramiano de controlabilidade, para cada $i\in\mathbf{S}$.
