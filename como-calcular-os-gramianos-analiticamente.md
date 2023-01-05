@@ -113,13 +113,12 @@ $$ =
 \cdot{\color{blue}
   \Big(\text{diag}(\pi)\otimes I_{(n^2)}\Big)
 }
-{\color{cyan}
-  \begin{bmatrix}
-  \text{vec}(E_1E_1')\\
-  \text{vec}(E_2E_2')\\
-  \vdots\\
-  \text{vec}(E_NE_N')
-  \end{bmatrix}}
+\begin{bmatrix}
+\text{vec}(E_1E_1')\\
+\text{vec}(E_2E_2')\\
+\vdots\\
+\text{vec}(E_NE_N')
+\end{bmatrix}
 $$
 
 $V_i=\text{vec}^{-1}(V_i)$ é o $i$-ésimo gramiano de controlabilidade, para cada $i\in\mathbf{S}$.
