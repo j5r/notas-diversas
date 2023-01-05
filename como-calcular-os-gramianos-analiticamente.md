@@ -89,8 +89,7 @@ I_{(Nn^2)} -
 \end{bmatrix}
 $$
 
-$$
-=
+$$ =
 \Big(P'\otimes I_{(n^2)} \Big)\cdot\Big(\text{diag}(\pi)\otimes I_{(n^2)}\Big)
 \begin{bmatrix}
 \text{vec}(E_1E_1')\\
