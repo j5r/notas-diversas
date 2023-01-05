@@ -1,7 +1,7 @@
 <script>
 MathJax = {
   tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
+    inlineMath: [['$', '$']]
   },
   svg: {
     fontCache: 'global'
@@ -98,16 +98,15 @@ I_{(Nn^2)} -
 }
 \right)
 \end{bmatrix}
-  \begin{bmatrix}
-  \text{vec}(V_1)\\
-  \text{vec}(V_2)\\
-  \vdots\\
-  \text{vec}(V_N)
-  \end{bmatrix}
+\begin{bmatrix}
+\text{vec}(V_1)\\
+\text{vec}(V_2)\\
+\vdots\\
+\text{vec}(V_N)
+\end{bmatrix}
 $$
 
-$$
-=
+$$ =
 {\color{red}
   \Big(P'\otimes I_{(n^2)} \Big)
 }
@@ -120,8 +119,7 @@ $$
   \text{vec}(E_2E_2')\\
   \vdots\\
   \text{vec}(E_NE_N')
-  \end{bmatrix}
-}
+  \end{bmatrix}}
 $$
 
 $V_i=\text{vec}^{-1}(V_i)$ é o $i$-ésimo gramiano de controlabilidade, para cada $i\in\mathbf{S}$.
