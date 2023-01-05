@@ -44,7 +44,6 @@ Denote por $I_{(m)}$ a matriz identidade de ordem $m$, $\otimes$ o produto de Kr
 Resolva o seguinte sistema linear, nas variáveis $\text{vec}(S_i)$.
 
 $$
-{\color{magenta}
 \begin{bmatrix}
 I_{(Nn^2)} - \left(
 {\color{red}
@@ -59,7 +58,6 @@ I_{(Nn^2)} - \left(
 }
 \right)
 \end{bmatrix}
-}
 {\color{blue}
 \begin{bmatrix}
 \text{vec}(S_1)\\
@@ -69,14 +67,12 @@ I_{(Nn^2)} - \left(
 \end{bmatrix}
 }
 =
-{\color{cyan}
 \begin{bmatrix}
 \text{vec}(\mathcal{O}_1)\\
 \text{vec}(\mathcal{O}_2)\\
 \vdots\\
 \text{vec}(\mathcal{O}_N)
 \end{bmatrix}
-}
 $$
 
 $S_i=\text{vec}^{-1}(S_i)$ é o $i$-ésimo gramiano de observabilidade, para cada $i\in\mathbf{S}$.
@@ -86,7 +82,6 @@ $S_i=\text{vec}^{-1}(S_i)$ é o $i$-ésimo gramiano de observabilidade, para cad
 Resolva o seguinte sistema linear, nas variáveis $\text{vec}(V_i)$.
 
 $$
-{\color{magenta}
 \begin{bmatrix}
 I_{(Nn^2)} -
 \left(
@@ -103,15 +98,12 @@ I_{(Nn^2)} -
 }
 \right)
 \end{bmatrix}
-}
-{\color{cyan}
   \begin{bmatrix}
   \text{vec}(V_1)\\
   \text{vec}(V_2)\\
   \vdots\\
   \text{vec}(V_N)
   \end{bmatrix}
-}
 $$
 
 $$
