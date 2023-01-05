@@ -22,7 +22,7 @@ $$
 
 com $C_i'D_i=0$ com $D_i'D_i>0$.
 
-A cadeia de Markov $\\{\theta(k),k\ge0\\}$ tem matriz de transição dada por $P=[p_{ij}]\in[0,1]^{N\times N}$ tal que $Prob(\theta(k)=j\mid\theta(k-1)=i)=p_{ij}$, com distribuição inicial $\pi_i=Prob(\theta(0)=i)$.
+A cadeia de Markov $ \\{ \theta(k),k\ge0 \\} $ tem matriz de transição dada por $P=[p_{ij}]\in[0,1]^{N\times N}$ tal que $Prob(\theta(k)=j\mid\theta(k-1)=i)=p_{ij}$, com distribuição inicial $\pi_i=Prob(\theta(0)=i)$.
 
 As matrizes de malha fechada são
 
