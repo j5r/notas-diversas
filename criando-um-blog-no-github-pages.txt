@@ -1,0 +1,90 @@
+/root
+index.md # topicos:: matematica, portugues, computacao
+
+/matematica
+   ./index.md # topicos:: calculo, probabilidade-e-estatistica
+   ./calculo
+      ./index.md # topicos:: funcoes-de-uma-variavel-real, limites
+      ./funcoes-de-uma-variavel-real.md
+      ./limites.md
+   ./probabilidade-e-estatistica
+      ./index.md # topicos :: variaveis-aleatorias, distribuicoes-de-probabilidade
+      ./variaveis-aleatorias.md
+      ./distribuicoes-de-probabilidade.md
+/portugues
+   ./index.md # topicos :: analise-semantica, analise-sintatica
+   ./analise-semantica
+      ./index.md # topicos :: sujeito, predicado, 
+      ./sujeito.md
+      ./predicado.md
+   ./analise-sintatica
+      ./index.md  # topicos :: verbo, substantivo, adjetivo, adverbio
+      ./verbo.md
+      ./substantivo.md
+      ./adjetivo.md
+      ./adverbio.md
+/computacao
+   ./index.md # topicos :: compiladores, algoritmos, estrutura-de-dados
+   ./compiladores
+      ./index.md # topicos :: analise-lexicografica, analise-semantica, codigo-objeto
+      ./analise-lexicografica
+      ./analise-semantica
+      ./codigo-objeto
+   ./algoritmos
+      ./index.md # topicos :: ordenacao, busca-binaria, grafos
+      ./ordenacao
+         ./index.md # topicos :: bubble-sort, quick-sort, heap-sort
+         ./bubble-sort.md
+         ./quick-sort.md
+         ./heap-sort.md
+      ./busca-binaria.md
+      ./grafos.md
+
+
+
+Cada .md será uma página.
+Sugestão para o arquivo /root/index.md:
+"
+Eis os tópicos do meu blog.
+
+# [(1) Matemática](./matematica)
+# [(2) Língua Portuguesa](./portugues)
+# [(3) Ciência da Computação](computacao)
+"
+
+Sugestão para o arquivo /root/matematica/index.md 
+"
+## [(1) Cálculo Diferencial e Integral I](./calculo)
+## [(2) Probabilidade e Estatística](./probabilidade-e-estatistica)
+"
+
+
+Nos arquivos .md em que se necessita usar código de computador, por exemplo na linguagem matlab ou python, use
+"
+um exemplo de código matlab
+```matlab
+function [s,v,d] = superpower(A,b)
+s = 3*A + 1; % qualquer coisa aleatoria aqui, nada tem sentido
+v = A*b;
+d = A*b-b;
+end
+```
+
+e agora um exemplo de código python
+```python
+def foo(x,y,*args)
+  # qualquer comentario bobo aqui
+  return (x+y, len(args))
+```
+"
+
+
+Nos arquivos .md em que se necessita usar código LaTeX para escrever equações, precisa-se importar alguns scripts HTML no início do arquivo. Veja o exemplo.
+"
+<script>MathJax = {tex: {inlineMath: [['$', '$']]}, svg: {fontCache: 'global'}};</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"> </script>
+
+Uma equação inline $3x^2-4x=12\sqrt{11}$ e agora uma em display style
+$$x = \frac{-b\pm \sqrt{b^2-4ac}}{2a} $$
+
+"
