@@ -2,5 +2,5 @@
 
 Várias notas pessoais sobre temas variados.
 
-- [Matemática](./matematica)
-- [Música](./musica)
+## [(1) Matemática](./matematica)
+## [(2) Música](./musica)

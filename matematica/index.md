@@ -1,3 +1,3 @@
-# [Cálculo numérico](./calculo-numerico)
+## [(1) Cálculo numérico](./calculo-numerico)
 
-# [Controle](./controle)
+## [(2) Controle](./controle)
