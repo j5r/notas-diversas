@@ -1,17 +1,6 @@
 # Notas Diversas
-Várias notas pessoais, sem qualquer tema específico.
 
-# Matemática
+Várias notas pessoais sobre temas variados.
 
-## Controle
-  - [Como calcular os gramianos analiticamente.](./como-calcular-os-gramianos-analiticamente)
-
-## Outro assunto...
-
-
-# Música
-
-## Composições
-
-## Anotações
- 
+- [Matemática](./matematica)
+- [Música](./musica)
