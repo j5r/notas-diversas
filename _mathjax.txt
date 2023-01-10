@@ -1,2 +1,2 @@
 
-<div style="background-color:#ccd;border-radius:15px;padding:5px;"></div>
+<div style="background-color:#dde;border-radius:15px;padding:5px;"></div>
