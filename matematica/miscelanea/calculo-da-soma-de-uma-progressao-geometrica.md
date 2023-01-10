@@ -61,7 +61,7 @@ Aproveitando o resultado acima, tomando o limite $n\to\infty$, temos
 
 <div style="background-color:#ccd;border-radius:15px;padding:5px;">
 $$
-S_m^\infty = \lim_{n\to\infty}\frac{a(q^m- q^{n+1})}{(1- q)} = 
+S_m^\infty=aq^m+aq^{m+1}+aq^{m+2}... = \lim_{n\to\infty}\frac{a(q^m- q^{n+1})}{(1- q)} = 
 \begin{cases}
 0,& q=0,\\\\[4pt]
 \frac{aq^m}{(1- q)}, & q\in (-1,0)\cup(0,1),\\\\[4pt]
