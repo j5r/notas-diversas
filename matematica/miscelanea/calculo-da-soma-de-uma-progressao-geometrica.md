@@ -44,9 +44,11 @@ Agora isolamos $S_m^n$.
 $$
 S_m^n- qS_m^n = aq^m- aq^{n+1}
 $$
+
 $$
 S_m^n(1- q) = a(q^m- q^{n+1})
 $$
+
 <div style="background-color:#ccd;border-radius:15px;padding:5px;">
 $$
 S_m^n = \frac{a(q^m- q^{n+1})}{(1- q)} = aq^m+aq^{m+1}+...+aq^{n-1}+aq^n
