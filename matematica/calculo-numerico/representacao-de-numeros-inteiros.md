@@ -191,7 +191,7 @@ Lembramos que, em uma determinada base $\beta$, os dígitos $a_i$ vão desde $0$
 
 Assim, temos a representação hexadecimal do número 
 $$
-N=681\_{10}=(6,8,1)\_{10}=2A9\_{16}=(2,A,9)\_{16}.
+N=681\_{10}=(6,8,1)_{10}=2A9\_{16}=(2,A,9)\_{16}.
 $$
 Façamos as contas.
 
