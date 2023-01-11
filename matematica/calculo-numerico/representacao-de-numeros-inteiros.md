@@ -29,7 +29,7 @@ Nos exemplos abaixo, faremos:
 - [a conversão de $N=1010101001$ da base binária para a base decimal.](#exemplo-3)
 - [um exemplo na base hexadecimal](#exemplo-4)
 
-Para evitar ambiguidade, denotamos a base da seguinte forma: $N_\beta$. Como exemplo, $$1010101001_2$$ significa que o número está escrito na base binária e $$681_{10}$$ está na base decimal.
+Para evitar ambiguidade, denotamos a base da seguinte forma: $N_\beta$. Como exemplo, $1010101001\_2$ significa que o número está escrito na base binária e $681\_{10}$ está na base decimal.
 
 ### **Exemplo 1**
 
@@ -189,7 +189,11 @@ Lembramos que, em uma determinada base $\beta$, os dígitos $a_i$ vão desde $0$
 | :--------: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | $\beta=16$ |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F  |
 
-Assim, temos a representação hexadecimal do número $$N=681_{10}=2A9_{16}$$. Façamos as contas.
+Assim, temos a representação hexadecimal do número 
+$$
+N=681_{10}=(6,8,1)\_{10}=2A9_{16}=(2,A,9)\_{16}.
+$$
+Façamos as contas.
 
 $$
 \begin{aligned}
