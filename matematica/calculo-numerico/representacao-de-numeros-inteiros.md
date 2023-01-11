@@ -77,7 +77,7 @@ $$
 \begin{aligned}
 N&=1\times 2^0+0\times 2^1+0\times 2^2+1\times 2^3+0\times 2^4+1\times 2^5+0\times 2^6+1\times 2^7+0\times 2^8+1\times 2^9\\\\
 &=1\times 1+0\times 2+0\times 4+1\times 8+0\times 16+1\times 32+0\times 64+1\times 128+0\times 256+1\times 512\\\\
-&= 1+0+0+8+31+0+128+512=681.
+&= 1+0+0+8+32+0+128+512=681.
 \end{aligned}
 $$
 
@@ -91,7 +91,7 @@ $$
 N_0=681=2\times 340 +1.
 $$
 
-O resto $1$ é o nosso dígito $a_0$. Agora, trocamos o $N_0$ por $N_1=340$ e repetimos o procedimento.
+O resto $1$ é o nosso dígito $a_0$. Repetimos o procedimento para o cociente $N_1=340$.
 
 [Até o momento temos $N=(...,1)$]
 
@@ -99,7 +99,7 @@ $$
 N_1=340=2\times 170+0.
 $$
 
-O resto $0$ é o nosso dígito $a_1$. Agora, trocamos o $N_1$ por $N_2=170$.
+O resto $0$ é o nosso dígito $a_1$. Repetimos o procedimento para o cociente $N_2=170$.
 
 [Até o momento temos $N=(...,0,1)$]
 
@@ -107,7 +107,7 @@ $$
 N_2=170=2\times 85+0.
 $$
 
-O resto $0$ é o nosso dígito $a_2$. Agora, trocamos o $N_2$ por $N_3=85$.
+O resto $0$ é o nosso dígito $a_2$. Repetimos o procedimento para o cociente $N_3=85$.
 
 [Até o momento temos $N=(...,0,0,1)$]
 
@@ -115,7 +115,7 @@ $$
 N_3=85=2\times 42+1.
 $$
 
-O resto $1$ é o nosso dígito $a_3$. Agora, trocamos o $N_3$ por $N_4=42$.
+O resto $1$ é o nosso dígito $a_3$. Repetimos o procedimento para o cociente $N_4=42$.
 
 [Até o momento temos $N=(...,1,0,0,1)$]
 
@@ -123,7 +123,7 @@ $$
 N_4=42=2\times 21+0.
 $$
 
-O resto $0$ é o nosso dígito $a_4$. Agora, trocamos o $N_4$ por $N_5=21$.
+O resto $0$ é o nosso dígito $a_4$. Repetimos o procedimento para o cociente $N_5=21$.
 
 [Até o momento temos $N=(...,0,1,0,0,1)$]
 
@@ -131,7 +131,7 @@ $$
 N_5=21=2\times 10+1.
 $$
 
-O resto $1$ é o nosso dígito $a_5$. Agora, trocamos o $N_5$ por $N_6=10$.
+O resto $1$ é o nosso dígito $a_5$. Repetimos o procedimento para o cociente $N_6=10$.
 
 [Até o momento temos $N=(...,1,0,1,0,0,1)$]
 
@@ -139,7 +139,7 @@ $$
 N_6=10=2\times 5+0.
 $$
 
-O resto $0$ é o nosso dígito $a_6$. Agora, trocamos o $N_6$ por $N_7=5$.
+O resto $0$ é o nosso dígito $a_6$. Repetimos o procedimento para o cociente $N_7=5$.
 
 [Até o momento temos $N=(...,0,1,0,1,0,0,1)$]
 
@@ -147,7 +147,7 @@ $$
 N_7=5=2\times 2+1.
 $$
 
-O resto $1$ é o nosso dígito $a_7$. Agora, trocamos o $N_7$ por $N_8=2$.
+O resto $1$ é o nosso dígito $a_7$. Repetimos o procedimento para o cociente $N_8=2$.
 
 [Até o momento temos $N=(...,1,0,1,0,1,0,0,1)$]
 
@@ -155,7 +155,7 @@ $$
 N_8=2=2\times 1+0.
 $$
 
-O resto $0$ é o nosso dígito $a_8$. Agora, trocamos o $N_8$ por $N_9=1$.
+O resto $0$ é o nosso dígito $a_8$. Repetimos o procedimento para o cociente $N_9=1$.
 
 [Até o momento temos $N=(...,0,1,0,1,0,1,0,0,1)$]
 
@@ -163,7 +163,7 @@ $$
 N_9=1=2\times 0+1.
 $$
 
-O resto $1$ é o nosso dígito $a_9$. Agora, trocamos o $N_9$ por $N_{10}=0$.
+O resto $1$ é o nosso dígito $a_9$. Repetimos o procedimento para o cociente $N\_{10}=0$.
 
 [Até o momento temos $N=(...,1,0,1,0,1,0,1,0,0,1)$]
 
@@ -171,7 +171,7 @@ $$
 N_{10}=0=2\times 0+0.
 $$
 
-O resto $0$ é o nosso dígito $a_{10}$. Agora, trocamos o $N_{10}$ por $N_{11}=0$.
+O resto $0$ é o nosso dígito $a_{10}$. Repetimos o procedimento para o cociente $N\_{11}=0$.
 
 [Até o momento temos $N=(...,0,1,0,1,0,1,0,1,0,0,1)$]
 
@@ -191,7 +191,7 @@ Lembramos que, em uma determinada base $\beta$, os dígitos $a_i$ vão desde $0$
 
 Assim, temos a representação hexadecimal do número 
 $$
-N=681_{10}=(6,8,1)\_{10}=2A9_{16}=(2,A,9)\_{16}.
+N=681\_{10}=(6,8,1)\_{10}=2A9\_{16}=(2,A,9)\_{16}.
 $$
 Façamos as contas.
 
