@@ -1,13 +1,13 @@
 ## **Definições de variáveis**
 
-Uma variável é simplesmente um espaço na memória do computador que batizamos com um nome e guardamos informações nela. Para recuperar as informações, simplesmente chamamos pelo seu nome durante o programa.
+Uma variável é simplesmente um espaço na memória do computador que batizamos com um nome e guardamos informações nela. Para recuperar ou reescrever as informações, simplesmente chamamos pelo seu nome durante o programa.
 
 A definição de variáveis pode acontecer em duas etapas:
 
-1. **declarando-se** a variável (em linguagens estaticamente tipadas como C, C++, Java, etc.)
-2. **atribuindo-se-lhe** um valor
+1. **declarando-se** a variável (em linguagens estaticamente tipadas como C, C++, Java, etc.);
+2. **atribuindo-se-lhe** um valor.
 
-A etapa 1 normalmente não acontece nas linguagens dinamicamente tipadas.
+A etapa 1 normalmente acontece automaticamente durante a etapa 2 nas linguagens dinamicamente tipadas.
 
 ### **_Declarando_ uma variável**
 
@@ -59,7 +59,6 @@ Vamos fazer o mesmo acima com uma linguagem dinamicamente tipada (Python). Tais 
 4. nascimento = ano - idade
 ```
 
-Nas linguagens dinamicamente tipadas, a etapa da `declaração` é automaticamente feita durante a `atribuição`.
 
 - linha 1: atribuímos **28** à variável **idade**;
 - linha 2: atribuímos **2023** à variável **ano**;

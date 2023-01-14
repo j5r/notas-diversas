@@ -25,4 +25,4 @@ As linguagens de programação atuais todas, quase sem exceção, trabalham com 
 10. [[link aqui]]() conjunções (que reúnem valores lógicos, famosos _AND, OR, XOR, NOT_)
 11. [[link aqui]]() lançamento e captura de erros (os famosos "_try-catch_")
 
-As linguagens atuais têm pelo menos uma de cada dessas propriedades, e serão explicadas
+As linguagens atuais têm pelo menos uma de cada dessas propriedades.
