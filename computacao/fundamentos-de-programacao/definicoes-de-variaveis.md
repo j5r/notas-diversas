@@ -31,7 +31,7 @@ Neste ponto, a linguagem de programação tem um **operador de atribuição** qu
 
 Vamos ver como seria **declarar** e **atribuir** valor a uma variável nas linguagens C e C++.
 
-```C
+```c
 // C ou C++
 int idade, nascimento;     // 1
 idade = 28;                // 2
@@ -40,7 +40,7 @@ int ano = 2023;            // 4
 nascimento = ano - idade;  // 5
 ```
 
-- linha 1: `declaramos` **idade** e **nascimento** duas variáveis do tipo inteiro **int**;
+- linha 1: `declaramos` **idade** e **nascimento**, duas variáveis do tipo inteiro **int**;
 - linha 2: `atribuímos` o valor **28** à variável **idade** (guardamos esse valor na memória);
 - linha 4: `declaramos` e `atribuímos` o valor **2023** à variável **ano** do tipo **int**;
 - linha 5: realizamos uma operação aritmética com as variáveis **ano** e **idade** (os valores em memória são recuperados quando as variáveis estão do lado direito da atribuição) e atribuímos seu resultado à variável **nascimento**.
