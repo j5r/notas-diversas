@@ -13,8 +13,8 @@ As linguagens de programação atuais têm vários aspectos diferentes, cada uma
 
 As linguagens de programação atuais todas, quase sem exceção, trabalham com o paradigma estruturado (e outros), que pode ser caracterizado pelos seguintes aspectos (estou fazendo aqui as definições de minha cabeça, não consultei literatura. Posso fazê-lo em outro momento caso necessário.)
 
-1. [[link aqui]](./definicoes-de-variaveis) definições de variáveis (tipadas estatica ou dinamicamente)
-2. [[link aqui]]() atribuição de variáveis (com conversão de tipos ou não)
+1. [[link aqui]](./definicoes-de-variaveis) definições de variáveis (tipadas estática ou dinamicamente)
+2. [[link aqui]](./definicoes-de-variaveis) atribuição de variáveis (com conversão de tipos -_casting_- ou não)
 3. [[link aqui]]() escopo de variáveis (locais ou globais)
 4. [[link aqui]]() estrutura de decisão (o famoso _"if-then-else, switch-case"_)
 5. [[link aqui]]() estrutura de repetição (os famosos _"for, do, while"_)

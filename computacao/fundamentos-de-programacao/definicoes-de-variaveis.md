@@ -64,3 +64,18 @@ Nas linguagens dinamicamente tipadas, a etapa da `declaração` é automaticamen
 - linha 1: atribuímos **28** à variável **idade**;
 - linha 2: atribuímos **2023** à variável **ano**;
 - linha 4: atribuímos **1995** à variável **nascimento**, resultado da operação aritmética de subtração em questão.
+
+
+### **Conversão de tipos**
+
+Algumas vezes é necessário fazer uma conversão forçada de um tipo de dado para outro, o que chamamos de _casting_. Tal necessidade é inerente às linguagens estaticamente tipadas. Vamos ver um exemplo.
+
+```c
+// C ou C++
+1. float base = 145.72, altura = 49.28;
+2. int area = (int) base * altura;
+```
+
+- linha 1: as variáveis **base** e **altura** são inicializadas com números os reais (tipo **float**) **145.72** e **49.28** respectivamente.
+
+- linha 2: a variável **area** do tipo **int** é inicializada com **7181**, que é o resultado da conversão do número real **7181.0816** para o tipo **int** por meio do _casting_, representado por `(int)` logo após o sinal de atribuição.
