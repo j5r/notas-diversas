@@ -13,9 +13,9 @@ A etapa 1 normalmente acontece automaticamente durante a etapa 2 nas linguagens 
 
 Quando declaramos uma variável, dizemos qual o seu **tipo** e o seu **nome** e às vezes o seu **tamanho**.
 
-- **Tipo:** cada informação pode ser de tipo "texto", "número inteiro", "número real", "valor lógico verdadeiro/falso", e variantes desses. Além desses tipos padrão, podemos criar tipos personalizados, os dados compostos que são chamados de estruturas (relembre o ["struct"](./linguagem-de-programacao#linguagem-estruturada))
+- **Tipo:** cada informação pode ser de tipo "texto", "número inteiro", "número real", "valor lógico verdadeiro/falso", e variantes desses. Além desses tipos padrão, podemos criar tipos personalizados, os dados compostos que são chamados de estruturas (relembre o ["struct"](./linguagem-de-programacao#linguagem-estruturada));
 
-- **Nome:** batizamos a variável (um bloco de memória) com o nome que quisermos, dentro das regras de "batismo" da determinada linguagem. Cada linguagem tem um conjunto de palavras-chave que têm seu próprio propósito, e por isso não podemos batizar as variáveis com esses nomes. Os nomes normalmente não podem ter espaços e muitas vezes também não podem ser acentuados (há linguagens que permitem acentuação, mas normalmente não se recomenda usar esse recurso).
+- **Nome:** batizamos a variável (um bloco de memória) com o nome que quisermos, dentro das regras de "batismo" da determinada linguagem. Cada linguagem tem um conjunto de palavras-chave que têm seu próprio propósito, e por isso não podemos batizar as variáveis com esses nomes. Os nomes normalmente não podem ter espaços e muitas vezes também não podem ser acentuados (há linguagens que permitem acentuação, mas normalmente não se recomenda usar esse recurso);
 
 - **Tamanho:** a quantidade de bytes necessária para armazenar a requerida informação.
 
@@ -33,11 +33,11 @@ Vamos ver como seria **declarar** e **atribuir** valor a uma variável nas lingu
 
 ```C
 // C ou C++
-1. int idade, nascimento;
-2. idade = 28;
-3.
-4. int ano = 2023;
-5. nascimento = ano - idade;
+int idade, nascimento;     // 1
+idade = 28;                // 2
+                           // 3
+int ano = 2023;            // 4
+nascimento = ano - idade;  // 5
 ```
 
 - linha 1: `declaramos` **idade** e **nascimento** duas variáveis do tipo inteiro **int**;
@@ -53,10 +53,10 @@ Vamos fazer o mesmo acima com uma linguagem dinamicamente tipada (Python). Tais 
 
 ```python
 # Python
-1. idade = 28
-2. ano = 2023
-3.
-4. nascimento = ano - idade
+idade = 28                # 1
+ano = 2023                # 2
+                          # 3
+nascimento = ano - idade  # 4
 ```
 
 
@@ -71,8 +71,8 @@ Algumas vezes é necessário fazer uma conversão forçada de um tipo de dado pa
 
 ```c
 // C ou C++
-1. float base = 145.72, altura = 49.28;
-2. int area = (int) base * altura;
+float base = 145.72, altura = 49.28;  // 1
+int area = (int) base * altura;       // 2
 ```
 
 - linha 1: as variáveis **base** e **altura** são inicializadas com números os reais (tipo **float**) **145.72** e **49.28** respectivamente.
