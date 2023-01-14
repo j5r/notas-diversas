@@ -11,7 +11,7 @@ $$
 
 onde cada número $a_i$ é um dígito de $N$, e portanto respeita $0\le a_i<10$.
 
-No entanto, podemos mudar a base do sistema de numeração de $10$ para qualquer outra base $\beta\ge 1$, dando-nos a seguinte forma genérica
+No entanto, podemos mudar a base do sistema de numeração de $10$ para qualquer outra base $\beta\ge 2$, dando-nos a seguinte forma genérica
 
 <div style="background-color:#dde;border-radius:15px;padding:5px;">
 $$ N = a_0 \times \beta^0 + a_1 \times \beta^1+a_2 \times \beta^2+a_3 \times \beta^3+...,\quad \mbox{ com }\quad 0\le a_i < \beta \;\;\forall i. $$
@@ -26,8 +26,8 @@ Nos exemplos abaixo, faremos:
 
 - [a representação do inteiro $N=681$ na base decimal $(\beta=10)$;](#exemplo-1)
 - [a representação de $N=681$ na base binária $(\beta=2)$ e a conversão da binária para a decimal;](#exemplo-2)
-- [a conversão de $N=1010101001$ da base binária para a base decimal.](#exemplo-3)
-- [um exemplo na base hexadecimal](#exemplo-4)
+- [a conversão de $N=1010101001$ da base binária para a base decimal;](#exemplo-3)
+- [um exemplo na base hexadecimal.](#exemplo-4)
 
 Para evitar ambiguidade, denotamos a base da seguinte forma: $N_\beta$. Como exemplo, $1010101001\_2$ significa que o número está escrito na base binária e $681\_{10}$ está na base decimal.
 
@@ -178,7 +178,7 @@ O resto $0$ é o nosso dígito $a_{10}$. Repetimos o procedimento para o cocient
 **A partir desse ponto, se continuarmos o processo, obteremos sempre dígitos zero, os famosos "zeros à esquerda".**
 
 <div style="background-color:#dde;border-radius:15px;padding:5px;font-weigth:bold;">
-O procedimento acima pode ser usado para fazer a mudança de base de $10$ para qualquer outra base $\beta\ge 1.$ Já vimos no <a href="#exemplo-2">Exemplo 2</a> que a mudança de base de $\beta$ para $10$ é feita simplesmente fazendo a soma ponderada das potências de $\beta$.
+O procedimento acima pode ser usado para fazer a mudança de base de $10$ para qualquer outra base $\beta\ge 2.$ Já vimos no <a href="#exemplo-2">Exemplo 2</a> que a mudança de base de $\beta$ para $10$ é feita simplesmente fazendo a soma ponderada das potências de $\beta$.
 </div>
 
 ### **Exemplo 4**
@@ -202,3 +202,7 @@ N&=9\times 16^0+A\times 16^{1}+2\times 16^2\\\\
 $$
 
 Da próxima vez que você vir um número em formato hexadecimal, já sabe do que se trata. 
+
+### **Exercícios**
+
+Escreva o número $N=783_{10}$ nas bases $\beta\in\\{2,5,12,16\\}$.
