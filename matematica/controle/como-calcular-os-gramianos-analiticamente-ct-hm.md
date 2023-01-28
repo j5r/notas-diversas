@@ -6,7 +6,7 @@
 Considere o seguinte sistema
 
 $$
-\left\\{
+\left\{
 \begin{aligned}
 x(t)&=A_{\theta(t)}x(t)+B_{\theta(t)}u(t)+H_{\theta(t)}w(t)\\\\
 y(t)&=C_{\theta(t)}x(t)+D_{\theta(t)}u(t)\\\\
@@ -54,7 +54,7 @@ Denote por $I_{(m)}$ a matriz identidade de ordem $m$, $\otimes$ o produto de Kr
 Considere o operador $\mathcal{T}_{ik}(P)$, para cada $(ik)\in\mathcal{N}\times\mathcal{M}$, dado por
 
 $$
-\mathcal{T}\_{ik}(P) = \hat{A}\_{ik}'P\_{ik} + P\_{ik}\hat{A}\_{ik} + 
+\mathcal{T}\_{ik}(P) = \hat{A}\_{ik}'P\_{ik} + P\_{ik}\hat{A}\_{ik} +
 \sum\_{j\in\mathcal{N}} \sum\_{\ell\in\mathcal{M}} \nu\_{ik,j\ell} P\_{j\ell}
 $$
 
@@ -68,9 +68,10 @@ $$
 
 Para resolvê-lo analiticamente, escrevemos o seguinte sistema de equações lineares, nas variáveis $P_{j\ell}$.
 
-$$\scriptsize
+$$
+\scriptsize
 \begin{split}
-&\left\\{
+&\left\{
   \begin{bmatrix}
   I_{(n)}\otimes \hat{A}\_{11}'\\\\
   &...\\\\
@@ -136,7 +137,6 @@ $$\scriptsize
 \end{split}
 $$
 
-
 ## Gramiano de Controlabilidade?[refazer as contas]
 
 Considere a distribuição inicial de $Z(0)$ conforme $\pi\_{j\ell}=Prob(Z(0)=(j\ell))$ e também $\mathcal{Q}\_{j\ell}=\pi\_{j\ell}H\_jH\_j'$ para todo $(j\ell)\in\mathcal{N}\times\mathcal{M}$.
@@ -144,7 +144,7 @@ Considere a distribuição inicial de $Z(0)$ conforme $\pi\_{j\ell}=Prob(Z(0)=(j
 Considere o operador $\mathcal{L}_{j\ell}(P)$, para cada $(j\ell)\in\mathcal{N}\times\mathcal{M}$, dado por
 
 $$
-\mathcal{L}\_{j\ell}(Q) = \hat{A}\_{j\ell}Q\_{j\ell} + Q\_{j\ell}\hat{A}\_{j\ell}' + 
+\mathcal{L}\_{j\ell}(Q) = \hat{A}\_{j\ell}Q\_{j\ell} + Q\_{j\ell}\hat{A}\_{j\ell}' +
 \sum\_{i\in\mathcal{N}} \sum\_{k\in\mathcal{M}} \nu\_{ik,j\ell} Q\_{ik}
 $$
 
@@ -158,70 +158,82 @@ $$
 
 Para resolvê-lo analiticamente, escrevemos o seguinte sistema de equações lineares, nas variáveis $Q_{j\ell}$.
 
-$$\scriptsize
+$$
+\scriptsize
 \begin{split}
-&\left\\{
+  &\left\{
+    \begin{bmatrix}
+      I_{(n)}\otimes \hat{A}\_{11}\\\\
+      &...\\\\
+      &&I_{(n)}\otimes \hat{A}\_{1M}\\\\
+      &&&I_{(n)}\otimes \hat{A}\_{21}\\\\
+      &&&&...\\\\
+      &&&&&I_{(n)}\otimes \hat{A}\_{2M}\\\\
+      &&&&&&...\\\\
+      &&&&&&&I_{(n)}\otimes \hat{A}\_{NM}
+    \end{bmatrix}
+  \right.\\\\[8pt]
+  &+\begin{bmatrix}
+    \hat{A}\_{11}'\otimes I_{(n)}\\\\
+      &...\\\\
+      && \hat{A}\_{1M}'\otimes I_{(n)}\\\\
+      &&& \hat{A}\_{21}'\otimes I_{(n)}\\\\
+      &&&&...\\\\
+      &&&&& \hat{A}\_{2M}'\otimes I_{(n)}\\\\
+      &&&&&&...\\\\
+      &&&&&&& \hat{A}\_{NM}'\otimes I_{(n)}
+  \end{bmatrix}\\\\[8pt]
+  &+\left.\begin{bmatrix}
+      \begin{bmatrix}
+        \nu\_{11,11},&\nu\_{12,11},&...,&\nu\_{1M,11},&\nu\_{21,11},&...,&\nu\_{2M,11},&...,&\nu\_{NM,11}
+      \end{bmatrix}
+      \otimes I_{(n^2)}\\\\
+      \begin{bmatrix}
+        \nu\_{11,12},&\nu\_{12,12},&...,&\nu\_{1M,12},&\nu\_{21,12},&...,&\nu\_{2M,12},&...,&\nu\_{NM,12}
+      \end{bmatrix}
+      \otimes I_{(n^2)}\\\\
+      \vdots \\\\
+      \begin{bmatrix}
+         \nu\_{11,1M},&\nu\_{12,1M},&...,&\nu\_{1M,1M},&\nu\_{21,1M},&...,&\nu\_{2M,1M},&...,&\nu\_{NM,1M}
+      \end{bmatrix}
+      \otimes I_{(n^2)}\\\\
+      \begin{bmatrix}
+          \nu\_{11,21},&\nu\_{12,21},&...,&\nu\_{1M,21},&\nu\_{21,21},&...,&\nu\_{2M,21},&...,&\nu\_{NM,21}
+      \end{bmatrix}
+      \otimes I_{(n^2)}\\\\
+      \vdots \\\\
+      \begin{bmatrix}
+          \nu\_{11,2M},&\nu\_{12,2M},&...,&\nu\_{1M,2M},&\nu\_{21,2M},&...,&\nu\_{2M,2M},&...,&\nu\_{NM,2M}
+      \end{bmatrix}
+      \otimes I_{(n^2)}\\\\
+      \vdots \\\\
+      \begin{bmatrix}
+          \nu\_{11,NM},&\nu\_{12,NM},&...,&\nu\_{1M,NM},&\nu\_{21,NM},&...,&\nu\_{2M,NM},&...,&\nu\_{NM,NM}
+      \end{bmatrix}
+      \otimes I_{(n^2)}
+    \end{bmatrix}
+  \right\\}\\\\
+  &\times
   \begin{bmatrix}
-  I_{(n)}\otimes \hat{A}\_{11}\\\\
-  &...\\\\
-  &&I_{(n)}\otimes \hat{A}\_{1M}\\\\
-  &&&I_{(n)}\otimes \hat{A}\_{21}\\\\
-  &&&&...\\\\
-  &&&&&I_{(n)}\otimes \hat{A}\_{2M}\\\\
-  &&&&&&...\\\\
-  &&&&&&&I_{(n)}\otimes \hat{A}\_{NM}
+      \text{vec}(Q\_{11})\\\\
+      \vdots\\\\
+      \text{vec}(Q\_{1M})\\\\
+      \text{vec}(Q\_{21})\\\\
+      \vdots\\\\
+      \text{vec}(Q\_{2M})\\\\
+      \vdots\\\\
+      \text{vec}(Q\_{NM})
   \end{bmatrix}
-\right.\\\\[8pt]
-&+\begin{bmatrix}
-\hat{A}\_{11}'\otimes I_{(n)}\\\\
-  &...\\\\
-  && \hat{A}\_{1M}'\otimes I_{(n)}\\\\
-  &&& \hat{A}\_{21}'\otimes I_{(n)}\\\\
-  &&&&...\\\\
-  &&&&& \hat{A}\_{2M}'\otimes I_{(n)}\\\\
-  &&&&&&...\\\\
-  &&&&&&& \hat{A}\_{NM}'\otimes I_{(n)}
-\end{bmatrix}\\\\[8pt]
-&+\left.
+  =
   \begin{bmatrix}
-\begin{bmatrix}
-\nu\_{11,11},&\nu\_{12,11},&...,&\nu\_{1M,11},&\nu\_{21,11},&...,&\nu\_{2M,11},&...,&\nu\_{NM,11}\end{bmatrix}
-\otimes I_{(n^2)}\\\\
-\begin{bmatrix}\nu\_{11,12},&\nu\_{12,12},&...,&\nu\_{1M,12},&\nu\_{21,12},&...,&\nu\_{2M,12},&...,&\nu\_{NM,12}\end{bmatrix}
-\otimes I_{(n^2)}\\\\
-\vdots \\\\
-\begin{bmatrix}\nu\_{11,1M},&\nu\_{12,1M},&...,&\nu\_{1M,1M},&\nu\_{21,1M},&...,&\nu\_{2M,1M},&...,&\nu\_{NM,1M}\end{bmatrix}
-\otimes I_{(n^2)}\\\\
-\begin{bmatrix}\nu\_{11,21},&\nu\_{12,21},&...,&\nu\_{1M,21},&\nu\_{21,21},&...,&\nu\_{2M,21},&...,&\nu\_{NM,21}\end{bmatrix}
-\otimes I_{(n^2)}\\\\
-\vdots \\\\
-\begin{bmatrix}\nu\_{11,2M},&\nu\_{12,2M},&...,&\nu\_{1M,2M},&\nu\_{21,2M},&...,&\nu\_{2M,2M},&...,&\nu\_{NM,2M}\end{bmatrix}
-\otimes I_{(n^2)}\\\\
-\vdots \\\\
-\begin{bmatrix}\nu\_{11,NM},&\nu\_{12,NM},&...,&\nu\_{1M,NM},&\nu\_{21,NM},&...,&\nu\_{2M,NM},&...,&\nu\_{NM,NM}\end{bmatrix}
-\otimes I_{(n^2)}
-\end{bmatrix}
-\right\\}\\\\
-&\times
-\begin{bmatrix}
-\text{vec}(Q\_{11})\\\\
-\vdots\\\\
-\text{vec}(Q\_{1M})\\\\
-\text{vec}(Q\_{21})\\\\
-\vdots\\\\
-\text{vec}(Q\_{2M})\\\\
-\vdots\\\\
-\text{vec}(Q\_{NM})
-\end{bmatrix}=
-\begin{bmatrix}
-\text{vec}(\mathcal{Q}\_{11})\\\\
-\vdots\\\\
-\text{vec}(\mathcal{Q}\_{1M})\\\\
-\text{vec}(\mathcal{Q}\_{21})\\\\
-\vdots\\\\
-\text{vec}(\mathcal{Q}\_{2M})\\\\
-\vdots\\\\
-\text{vec}(\mathcal{Q}\_{NM})
-\end{bmatrix}
+      \text{vec}(\mathcal{Q}\_{11})\\\\
+      \vdots\\\\
+      \text{vec}(\mathcal{Q}\_{1M})\\\\
+      \text{vec}(\mathcal{Q}\_{21})\\\\
+      \vdots\\\\
+      \text{vec}(\mathcal{Q}\_{2M})\\\\
+      \vdots\\\\
+      \text{vec}(\mathcal{Q}\_{NM})
+  \end{bmatrix}
 \end{split}
 $$
