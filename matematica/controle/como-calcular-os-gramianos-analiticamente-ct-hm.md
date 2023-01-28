@@ -20,7 +20,7 @@ $$
 
 com $C_i'D_i=0$ com $D_i'D_i>0$.
 
-A cadeia de Markov $ \{ \theta(t),t\ge0 \} $ tem matriz de transição dada por $\Lambda=[\lambda_{ij}]$ e o processo observado é $\{\eta(t),t\ge0 \}$. O processo conjunto $Z(t)=(\theta(t),\eta(t))$ é tal que, para $h>0$ pequeno,
+A cadeia de Markov $ \\{ \theta(t),t\ge0 \\} $ tem matriz de transição dada por $\Lambda=[\lambda_{ij}]$ e o processo observado é $\\{\eta(t),t\ge0 \\}$. O processo conjunto $Z(t)=(\theta(t),\eta(t))$ é tal que, para $h>0$ pequeno,
 
 $$
 Prob(Z(t+h)=(j,\ell)\mid Z(t)=(i,k)) =
@@ -45,7 +45,9 @@ As matrizes de malha fechada são
 
 $$\hat{A}_{ik}=A_i+B_iF_k\qquad\mbox{ e }\qquad\hat{C}_{ik}=C_i+D_iF_{ik},\quad \forall\; (ik)\in\mathcal{N}\times\mathcal{M}$$
 
-e definimos $\mathcal{O}_{ik}=\hat{C}_{ik}'\hat{C}_{ik}$, para cada $(ik)\in\mathcal{N}\times\mathcal{M}$.
+e definimos, para cada $(ik)\in\mathcal{N}\times\mathcal{M}$, 
+
+$$\mathcal{O}_{ik}=\hat{C}_{ik}'\hat{C}_{ik}.$$
 
 Denote por $I_{(m)}$ a matriz identidade de ordem $m$, $\otimes$ o produto de Kronecker, e $\text{vec}(X)$ o operador de vetorização (empilhamento das colunas de X).
 
@@ -139,7 +141,9 @@ $$
 
 ## Gramiano de Controlabilidade?[refazer as contas]
 
-Considere a distribuição inicial de $Z(0)$ conforme $\pi_{j\ell}=Prob(Z(0)=(j\ell))$ e também $\mathcal{Q}_{j\ell}=\pi_{j\ell}H_jH_j'$ para todo $(j\ell)\in\mathcal{N}\times\mathcal{M}$.
+Considere a distribuição inicial de $Z(0)$ conforme $\pi_{j\ell}=Prob(Z(0)=(j\ell))$ e também, para todo $(j\ell)\in\mathcal{N}\times\mathcal{M}$,
+
+$$\mathcal{Q}_{j\ell}=\pi_{j\ell}H_jH_j'.$$
 
 Considere o operador $\mathcal{L}_{j\ell}(P)$, para cada $(j\ell)\in\mathcal{N}\times\mathcal{M}$, dado por
 
