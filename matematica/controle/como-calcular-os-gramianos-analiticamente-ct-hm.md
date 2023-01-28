@@ -144,7 +144,7 @@ Considere a distribuição inicial de $Z(0)$ conforme $\pi_{j\ell}=Prob(Z(0)=(j\
 
 $$\mathcal{Q}_{j\ell}=\pi_{j\ell}H_jH_j'.$$
 
-Considere o operador $\mathcal{L}_{j\ell}(P)$, para cada $(j\ell)\in\mathcal{N}\times\mathcal{M}$, dado por
+Considere o operador $\mathcal{L}_{j\ell}(Q)$, para cada $(j\ell)\in\mathcal{N}\times\mathcal{M}$, dado por
 
 $$
 \mathcal{L}_{j\ell}(Q) = \hat{A}_{j\ell}Q_{j\ell} + Q_{j\ell}\hat{A}_{j\ell}' +
