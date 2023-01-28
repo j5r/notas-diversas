@@ -71,7 +71,7 @@ $$
 Para resolvê-lo analiticamente, escrevemos o seguinte sistema de equações lineares, nas variáveis $P_{j\ell}$.
 
 $$
-\scriptsize
+\small
 \begin{split}
 &\left\{
   \begin{bmatrix}
@@ -163,7 +163,7 @@ $$
 Para resolvê-lo analiticamente, escrevemos o seguinte sistema de equações lineares, nas variáveis $Q_{j\ell}$.
 
 $$
-\scriptsize
+\small
 \begin{split}
   &\left\{
     \begin{bmatrix}
