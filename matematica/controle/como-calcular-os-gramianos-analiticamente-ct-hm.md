@@ -60,7 +60,7 @@ $$
 \sum_{j\in\mathcal{N}} \sum_{\ell\in\mathcal{M}} \nu_{ik,j\ell} P_{j\ell}
 $$
 
-A solução $P=\{P_{j\ell},j\in\mathcal{M},\ell\in\mathcal{M}\}$ da equação
+A solução $P=\\{P_{j\ell},j\in\mathcal{M},\ell\in\mathcal{M}\\}$ da equação
 
 $$
 \mathcal{T}_{ik}(P) + \mathcal{O}_{ik} = 0
@@ -151,7 +151,7 @@ $$
 \sum_{i\in\mathcal{N}} \sum_{k\in\mathcal{M}} \nu_{ik,j\ell} Q_{ik}
 $$
 
-A solução $Q=\{Q_{j\ell},j\in\mathcal{M},\ell\in\mathcal{M}\}$ da equação
+A solução $Q=\\{Q_{j\ell},j\in\mathcal{M},\ell\in\mathcal{M}\\}$ da equação
 
 $$
 \mathcal{L}_{j\ell}(Q) + \mathcal{Q}_{j\ell} = 0
