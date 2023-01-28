@@ -83,7 +83,7 @@ $$
 
 ### **Exemplo 3**
 
-Vamos agora mudar o número $N=681$ da base $\beta=10$ para $\beta=2$. Para realizar essa tarefa, precisamos fazer sucessivas divisões euclidianas de $N$ por $\beta=2$ e observar os restos.
+Vamos agora mudar o número $N=681$ da base $\beta=10$ para $\beta=2$. Para realizar essa tarefa, precisamos fazer sucessivas [divisões euclidianas](https://pt.wikipedia.org/wiki/Divis%C3%A3o_euclidiana#Teorema_da_divis%C3%A3o) de $N$ por $\beta=2$ e observar os restos.
 
 Primeira divisão euclidiana de $N_0=N=681$ por $2$:
 
