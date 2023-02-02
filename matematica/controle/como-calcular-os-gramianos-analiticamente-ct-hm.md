@@ -85,14 +85,14 @@ $$
   \end{bmatrix}
 \right.\\[8pt]
 &+\begin{bmatrix}
-\hat{A}_{11}\otimes I_{(n)}\\
+\hat{A}_{11}'\otimes I_{(n)}\\
   &...\\
-  && \hat{A}_{1M}\otimes I_{(n)}\\
-  &&& \hat{A}_{21}\otimes I_{(n)}\\
+  && \hat{A}_{1M}'\otimes I_{(n)}\\
+  &&& \hat{A}_{21}'\otimes I_{(n)}\\
   &&&&...\\
-  &&&&& \hat{A}_{2M}\otimes I_{(n)}\\
+  &&&&& \hat{A}_{2M}'\otimes I_{(n)}\\
   &&&&&&...\\
-  &&&&&&& \hat{A}_{NM}\otimes I_{(n)}
+  &&&&&&& \hat{A}_{NM}'\otimes I_{(n)}
 \end{bmatrix}\\[8pt]
 &+\left.
   \begin{bmatrix}
@@ -124,7 +124,7 @@ $$
 \text{vec}(P_{2M})\\
 \vdots\\
 \text{vec}(P_{NM})
-\end{bmatrix}=
+\end{bmatrix}=-
 \begin{bmatrix}
 \text{vec}(\mathcal{O}_{11})\\
 \vdots\\
@@ -176,14 +176,14 @@ $$
     \end{bmatrix}
   \right.\\[8pt]
   &+\begin{bmatrix}
-    \hat{A}_{11}'\otimes I_{(n)}\\
+    \hat{A}_{11}\otimes I_{(n)}\\
       &...\\
-      && \hat{A}_{1M}'\otimes I_{(n)}\\
-      &&& \hat{A}_{21}'\otimes I_{(n)}\\
+      && \hat{A}_{1M}\otimes I_{(n)}\\
+      &&& \hat{A}_{21}\otimes I_{(n)}\\
       &&&&...\\
-      &&&&& \hat{A}_{2M}'\otimes I_{(n)}\\
+      &&&&& \hat{A}_{2M}\otimes I_{(n)}\\
       &&&&&&...\\
-      &&&&&&& \hat{A}_{NM}'\otimes I_{(n)}
+      &&&&&&& \hat{A}_{NM}\otimes I_{(n)}
   \end{bmatrix}\\[8pt]
   &+\left.\begin{bmatrix}
       \begin{bmatrix}
@@ -226,7 +226,7 @@ $$
       \vdots\\
       \text{vec}(Q_{NM})
   \end{bmatrix}
-  =
+  =-
   \begin{bmatrix}
       \text{vec}(\mathcal{Q}_{11})\\
       \vdots\\
